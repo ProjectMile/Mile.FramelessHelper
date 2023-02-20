@@ -17,14 +17,15 @@ Please set the YYTHUNKS_INSTALL_DIR environment variable the to path of
 [the latest YY-Thunks binaries](https://github.com/Chuyu-Team/YY-Thunks/releases/latest)
 without double quotation mark before compile x86 and x64 targets of Mile.Qt.
 
-Please set the Qt6_DIR environment variable the to path of Qt6 toolchain binaries.
+Please set the QtBinaryFolder environment variable the to path of Qt6 toolchain
+binaries.
 
 After set the environment variable, run onekey-build-*.bat which you want.
 
 ## System Requirements
 
 - Supported OS: Windows Vista RTM (Build 6000) or later
-- Supported Platforms: x86, x86-64(AMD64) and ARM64.
+- Supported Platforms: x86, x86-64(AMD64) and ARM64 (experimental).
 
 ## Documents
 
