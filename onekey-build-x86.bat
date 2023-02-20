@@ -24,7 +24,7 @@ mkdir %BinaryFolder%
 
 mkdir %ObjectFolder%\framelesshelper_debug
 pushd %ObjectFolder%\framelesshelper_debug
-cmake -DCMAKE_INSTALL_PREFIX=%BinaryFolder% -G "Ninja" -DCMAKE_BUILD_TYPE=Debug -DFRAMELESSHELPER_ENABLE_VCLTL=ON -DFRAMELESSHELPER_ENABLE_YYTHUNKS=ON ../../../../framelesshelper
+cmake -DCMAKE_PREFIX_PATH=%QtBinaryFolder% -DCMAKE_INSTALL_PREFIX=%BinaryFolder% -G "Ninja" -DCMAKE_BUILD_TYPE=Debug -DWindowsTargetPlatformMinVersion=6.0.6000.0 -DFRAMELESSHELPER_ENABLE_VCLTL=ON -DFRAMELESSHELPER_ENABLE_YYTHUNKS=ON ../../../../framelesshelper
 if %ERRORLEVEL% NEQ 0 exit /B %ERRORLEVEL%
 cmake --build . --parallel
 if %ERRORLEVEL% NEQ 0 exit /B %ERRORLEVEL%
@@ -34,7 +34,7 @@ popd
 
 mkdir %ObjectFolder%\framelesshelper_release
 pushd %ObjectFolder%\framelesshelper_release
-cmake -DCMAKE_INSTALL_PREFIX=%BinaryFolder% -G "Ninja" -DCMAKE_BUILD_TYPE=Release -DFRAMELESSHELPER_ENABLE_VCLTL=ON -DFRAMELESSHELPER_ENABLE_YYTHUNKS=ON ../../../../framelesshelper
+cmake -DCMAKE_PREFIX_PATH=%QtBinaryFolder% -DCMAKE_INSTALL_PREFIX=%BinaryFolder% -G "Ninja" -DCMAKE_BUILD_TYPE=Release -DWindowsTargetPlatformMinVersion=6.0.6000.0 -DFRAMELESSHELPER_ENABLE_VCLTL=ON -DFRAMELESSHELPER_ENABLE_YYTHUNKS=ON ../../../../framelesshelper
 if %ERRORLEVEL% NEQ 0 exit /B %ERRORLEVEL%
 cmake --build . --parallel
 if %ERRORLEVEL% NEQ 0 exit /B %ERRORLEVEL%
