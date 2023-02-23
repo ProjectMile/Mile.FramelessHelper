@@ -22,6 +22,14 @@ binaries.
 
 After set the environment variable, run onekey-build-*.bat which you want.
 
+Here is the simple command line example in Command Prompt:
+
+```
+set QtBinaryFolder=L:\Tools\Mile.Qt\x64
+set YYTHUNKS_INSTALL_DIR=D:\Tools\YY-Thunks
+onekey-build-x64-static.bat
+```
+
 ## System Requirements
 
 - Supported OS: Windows Vista RTM (Build 6000) or later
