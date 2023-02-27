@@ -1,7 +1,5 @@
 ﻿# Mile.FramelessHelper
 
-Work In Progress.
-
 Customized version of FramelessHelper created by Yuhang Zhao.
 
 ## Features
