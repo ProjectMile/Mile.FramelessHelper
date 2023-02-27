@@ -26,7 +26,7 @@ set CommonOptions=-DCMAKE_PREFIX_PATH=%QtBinaryFolder% -DCMAKE_INSTALL_PREFIX=%B
 
 mkdir %ObjectFolder%\framelesshelper_debug
 pushd %ObjectFolder%\framelesshelper_debug
-cmake %CommonOptions%  -DCMAKE_BUILD_TYPE=Debug ../../../../framelesshelper
+cmake %CommonOptions% -DCMAKE_BUILD_TYPE=Debug ../../../../framelesshelper
 if %ERRORLEVEL% NEQ 0 exit /B %ERRORLEVEL%
 cmake --build . --parallel
 if %ERRORLEVEL% NEQ 0 exit /B %ERRORLEVEL%
